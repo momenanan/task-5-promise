@@ -51,7 +51,12 @@ button {
   cursor: pointer;
   font-size: 18px;
 }
-
+.success-message{
+    color: #0bcd08;
+}
+.error-message{
+    color: #dd0909;
+}
 @keyframes shake {
   0% {transform: translateX(0);}
   25% {transform: translateX(-5px);}

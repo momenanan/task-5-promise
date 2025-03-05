@@ -17,14 +17,16 @@ const handleLogin = () => {
     const password = document.getElementById("password").value;
     const messageElement = document.getElementById("message");
 
+    messageElement.classList.remove("success-message","error-message");
+
     authenticateUser(username, password)
         .then(successMessage => {
-            messageElement.style.color = "green";
+            messageElement.classList.add("success-message")
             messageElement.textContent = successMessage;
             console.log(successMessage);
         })
         .catch(errorMessage => {
-            messageElement.style.color = "red";
+            messageElement.classList.add("error-message")
             messageElement.textContent = errorMessage;
             console.log(errorMessage);
         });
