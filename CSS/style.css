@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #150259;
+    margin-top: 180px;
+}
+.container{
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+h2{
+    color: white;
+}
+@keyframes shake{
+    0% {transform: translateX(0);}
+    25% {transform: translateX(-5px);}
+    50% {transform: translateX(5px);}
+    75% {transform: translateX(-5px);}
+    100% {transform: translateX(0);}
+}
+button:active{
+    animation: shake 0.3s ease-in-out;
+}
+@keyframes slidedown{
+    0%{transform: translateY(-50px); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}
+h2{
+    animation: slidedown 0.7s ease-in-out;
+}
